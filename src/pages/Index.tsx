@@ -207,18 +207,18 @@ export default function Index() {
                   className="group cursor-pointer overflow-hidden bg-card border-border hover-scale movie-card-shadow"
                   onClick={() => setSelectedCollection(collection.id)}
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4 mb-3">
-                      <div className="p-3 rounded-lg bg-primary/10">
-                        <Icon name={collection.icon as any} size={24} className="text-primary" />
+                  <CardContent className="p-4">
+                    <div className="flex items-start gap-3 mb-2">
+                      <div className="p-2 rounded-lg bg-primary/10">
+                        <Icon name={collection.icon as any} size={20} className="text-primary" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-bold text-lg mb-1">{collection.title}</h4>
-                        <p className="text-sm text-muted-foreground line-clamp-2">{collection.description}</p>
+                        <h4 className="font-bold text-base mb-1">{collection.title}</h4>
+                        <p className="text-xs text-muted-foreground line-clamp-2">{collection.description}</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Icon name="Film" size={14} />
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <Icon name="Film" size={12} />
                       <span>{collection.movies.length} фильмов</span>
                     </div>
                   </CardContent>
