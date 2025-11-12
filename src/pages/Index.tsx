@@ -11,81 +11,62 @@ const QUALITIES = ['4K', '1080p', '720p'];
 const YEARS = ['2024', '2023', '2022', '2021', '2020'];
 
 const MOVIES = [
-  {
-    id: 1,
-    title: 'Дюна: Часть вторая',
-    year: 2024,
-    genre: 'Фантастика',
-    quality: '4K',
-    rating: 8.7,
-    image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 2,
-    title: 'Оппенгеймер',
-    year: 2023,
-    genre: 'Драма',
-    quality: '4K',
-    rating: 8.5,
-    image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 3,
-    title: 'Крид 3',
-    year: 2023,
-    genre: 'Боевик',
-    quality: '1080p',
-    rating: 7.9,
-    image: 'https://images.unsplash.com/photo-1517438476312-10d79c077509?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 4,
-    title: 'Барби',
-    year: 2023,
-    genre: 'Комедия',
-    quality: '4K',
-    rating: 7.3,
-    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 5,
-    title: 'Джон Уик 4',
-    year: 2023,
-    genre: 'Боевик',
-    quality: '4K',
-    rating: 8.2,
-    image: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 6,
-    title: 'Гонка',
-    year: 2024,
-    genre: 'Триллер',
-    quality: '1080p',
-    rating: 7.8,
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 7,
-    title: 'Темная сторона',
-    year: 2023,
-    genre: 'Ужасы',
-    quality: '1080p',
-    rating: 7.1,
-    image: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&h=1200&fit=crop',
-  },
-  {
-    id: 8,
-    title: 'Космическая одиссея',
-    year: 2024,
-    genre: 'Фантастика',
-    quality: '4K',
-    rating: 8.4,
-    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=1200&fit=crop',
-  },
+  { id: 1, title: 'Дюна: Часть вторая', year: 2024, genre: 'Фантастика', quality: '4K', rating: 8.7, image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&h=1200&fit=crop' },
+  { id: 2, title: 'Оппенгеймер', year: 2023, genre: 'Драма', quality: '4K', rating: 8.5, image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=1200&fit=crop' },
+  { id: 3, title: 'Крид 3', year: 2023, genre: 'Боевик', quality: '1080p', rating: 7.9, image: 'https://images.unsplash.com/photo-1517438476312-10d79c077509?w=800&h=1200&fit=crop' },
+  { id: 4, title: 'Барби', year: 2023, genre: 'Комедия', quality: '4K', rating: 7.3, image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=1200&fit=crop' },
+  { id: 5, title: 'Джон Уик 4', year: 2023, genre: 'Боевик', quality: '4K', rating: 8.2, image: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&h=1200&fit=crop' },
+  { id: 6, title: 'Гонка', year: 2024, genre: 'Триллер', quality: '1080p', rating: 7.8, image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=1200&fit=crop' },
+  { id: 7, title: 'Темная сторона', year: 2023, genre: 'Ужасы', quality: '1080p', rating: 7.1, image: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&h=1200&fit=crop' },
+  { id: 8, title: 'Космическая одиссея', year: 2024, genre: 'Фантастика', quality: '4K', rating: 8.4, image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=1200&fit=crop' },
+  { id: 9, title: 'Паразиты', year: 2019, genre: 'Триллер', quality: '4K', rating: 8.6, image: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=1200&fit=crop' },
+  { id: 10, title: 'Интерстеллар', year: 2014, genre: 'Фантастика', quality: '4K', rating: 8.7, image: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&h=1200&fit=crop' },
+  { id: 11, title: 'Начало', year: 2010, genre: 'Фантастика', quality: '4K', rating: 8.8, image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=1200&fit=crop' },
+  { id: 12, title: 'Темный рыцарь', year: 2008, genre: 'Боевик', quality: '4K', rating: 9.0, image: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&h=1200&fit=crop' },
+  { id: 13, title: 'Побег из Шоушенка', year: 1994, genre: 'Драма', quality: '1080p', rating: 9.3, image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=1200&fit=crop' },
+  { id: 14, title: 'Форрест Гамп', year: 1994, genre: 'Драма', quality: '1080p', rating: 8.8, image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=1200&fit=crop' },
+  { id: 15, title: 'Крёстный отец', year: 1972, genre: 'Драма', quality: '1080p', rating: 9.2, image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=1200&fit=crop' },
+  { id: 16, title: 'Матрица', year: 1999, genre: 'Фантастика', quality: '4K', rating: 8.7, image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&h=1200&fit=crop' },
+  { id: 17, title: 'Гладиатор', year: 2000, genre: 'Боевик', quality: '4K', rating: 8.5, image: 'https://images.unsplash.com/photo-1517438476312-10d79c077509?w=800&h=1200&fit=crop' },
+  { id: 18, title: 'Молчание ягнят', year: 1991, genre: 'Триллер', quality: '1080p', rating: 8.6, image: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=1200&fit=crop' },
+  { id: 19, title: 'Звёздные войны', year: 1977, genre: 'Фантастика', quality: '4K', rating: 8.6, image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=1200&fit=crop' },
+  { id: 20, title: 'Криминальное чтиво', year: 1994, genre: 'Триллер', quality: '1080p', rating: 8.9, image: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=1200&fit=crop' },
+  { id: 21, title: 'Аватар 2', year: 2025, genre: 'Фантастика', quality: '4K', rating: 8.3, image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=1200&fit=crop' },
+  { id: 22, title: 'Миссия невыполнима 8', year: 2025, genre: 'Боевик', quality: '4K', rating: 8.1, image: 'https://images.unsplash.com/photo-1517438476312-10d79c077509?w=800&h=1200&fit=crop' },
 ];
 
 const FEATURED_MOVIE = MOVIES[0];
+
+const COLLECTIONS = [
+  {
+    id: 'top100',
+    title: 'Топ 100 фильмов по рейтингу',
+    description: 'Лучшие фильмы всех времён по версии IMDb',
+    icon: 'Trophy',
+    movies: MOVIES.filter(m => m.rating >= 8.5).sort((a, b) => b.rating - a.rating).slice(0, 10)
+  },
+  {
+    id: 'top2025',
+    title: 'Топ 2025 года',
+    description: 'Самые ожидаемые премьеры этого года',
+    icon: 'Sparkles',
+    movies: MOVIES.filter(m => m.year === 2025 || m.year === 2024).sort((a, b) => b.rating - a.rating)
+  },
+  {
+    id: 'new',
+    title: 'Только что добавили',
+    description: 'Свежие поступления в каталог',
+    icon: 'Flame',
+    movies: MOVIES.slice(0, 8)
+  },
+  {
+    id: '4k',
+    title: '4K коллекция',
+    description: 'Фильмы в максимальном качестве',
+    icon: 'MonitorPlay',
+    movies: MOVIES.filter(m => m.quality === '4K')
+  },
+];
 
 export default function Index() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -93,6 +74,7 @@ export default function Index() {
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [activeSection, setActiveSection] = useState('home');
   const [favorites, setFavorites] = useState<number[]>([]);
+  const [selectedCollection, setSelectedCollection] = useState<string | null>(null);
 
   const filteredMovies = MOVIES.filter(movie => {
     const matchesSearch = movie.title.toLowerCase().includes(searchQuery.toLowerCase());
@@ -209,6 +191,97 @@ export default function Index() {
               </SelectContent>
             </Select>
           </div>
+
+          <div className="mb-8">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-2xl font-bold">Подборки</h3>
+              <Button variant="ghost" size="sm" className="gap-2">
+                Все подборки
+                <Icon name="ArrowRight" size={16} />
+              </Button>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {COLLECTIONS.map((collection) => (
+                <Card
+                  key={collection.id}
+                  className="group cursor-pointer overflow-hidden bg-card border-border hover-scale movie-card-shadow"
+                  onClick={() => setSelectedCollection(collection.id)}
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4 mb-3">
+                      <div className="p-3 rounded-lg bg-primary/10">
+                        <Icon name={collection.icon as any} size={24} className="text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-lg mb-1">{collection.title}</h4>
+                        <p className="text-sm text-muted-foreground line-clamp-2">{collection.description}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Icon name="Film" size={14} />
+                      <span>{collection.movies.length} фильмов</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {selectedCollection && (
+            <div className="mb-8 p-6 rounded-lg bg-secondary/20 border border-border">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">
+                    {COLLECTIONS.find(c => c.id === selectedCollection)?.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {COLLECTIONS.find(c => c.id === selectedCollection)?.description}
+                  </p>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setSelectedCollection(null)}
+                >
+                  <Icon name="X" size={20} />
+                </Button>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {COLLECTIONS.find(c => c.id === selectedCollection)?.movies.map((movie, index) => (
+                  <Card key={movie.id} className="group cursor-pointer overflow-hidden bg-card border-border hover-scale">
+                    <div className="relative aspect-[2/3] overflow-hidden">
+                      {selectedCollection === 'top100' && (
+                        <div className="absolute top-2 left-2 z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center font-bold text-lg">
+                          {index + 1}
+                        </div>
+                      )}
+                      <img
+                        src={movie.image}
+                        alt={movie.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center">
+                        <Button size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full">
+                          <Icon name="Play" size={24} />
+                        </Button>
+                      </div>
+                      <Badge className="absolute top-2 right-2 bg-primary/90">{movie.quality}</Badge>
+                    </div>
+                    <CardContent className="p-3">
+                      <h4 className="font-semibold text-sm mb-1 truncate">{movie.title}</h4>
+                      <div className="flex items-center justify-between text-xs">
+                        <div className="flex items-center gap-1">
+                          <Icon name="Star" size={12} className="text-yellow-500 fill-yellow-500" />
+                          <span className="font-medium">{movie.rating}</span>
+                        </div>
+                        <span className="text-muted-foreground">{movie.year}</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="mb-6">
             <h3 className="text-2xl font-bold mb-4">Популярные жанры</h3>
